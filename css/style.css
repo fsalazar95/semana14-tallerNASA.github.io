@@ -1,0 +1,107 @@
+main {
+  min-height: calc(100vh - 160px);
+}
+
+  /* General */
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  /* Input de búsqueda */
+  #inputBuscar {
+    margin-bottom: 10px;
+    border-radius: 4x;
+  }
+  
+  /* Botón de búsqueda */
+  #btnBuscar {
+    border-radius: 4px;
+  }
+  
+  /* Tarjetas de resultados */
+  .card {
+    width: 100%; /* Ancho completo de su contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+  }
+  
+/* Contenedor interno de la tarjeta para habilitar desplazamiento */
+.card-body {
+  padding: 15px;
+  height: 200px; /* Ajusta según tu preferencia */
+  overflow-y: auto;  /* Desplazamiento vertical */
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.card-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0;
+  border-radius: 10px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card-text small {
+    color: #888;
+  }
+  
+  /* Grilla de imágenes */
+  #contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
